@@ -11,8 +11,7 @@ then
   curl -fsSLo $HOME/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 	# vim config
-  # was curl now just copy 
-   cp vim.conf  $HOME/.vimrc
+   curl -fsLO $HOME/.myScriptResources --create-dirs https://raw.githubusercontent.com/JuliaFoerster/bashMacSetUp/master/vim.conf
  
   echo "Installing Vim plugins..."
   vim +"PlugInstall --sync" +qa
